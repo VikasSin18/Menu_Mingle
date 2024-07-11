@@ -1,0 +1,84 @@
+.story_wrapper{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.story_title{
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: var(--black-1);
+    margin-bottom: 1rem;
+}
+.story_subtitle{
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: var(--black-1);
+    margin-bottom: 2rem;
+}
+.story_text{
+    font-size: 1.4rem;
+    line-height: 1.4rem;
+    color: var(--black-2);
+}
+
+@media only screen and (min-width:760px){
+    
+    .story_wrapper{
+        flex-direction: row;
+        gap: 3rem;
+    }
+    .story_img,
+    .story_info{
+        flex: 1;
+    }
+    .story_title{
+        font-size: 3.6rem;
+    }
+    .story_subtitle{
+        font-size: 1.8rem;
+    }
+    .story_text{
+        font-size: 1.8rem;
+        max-width: 0 auto;
+    }
+}
+/*goals*/
+.goal_title{
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: var(--black-1);
+    margin-bottom: 1rem;
+}
+.goal_info{
+    text-align: left;
+    margin-bottom: 5rem;
+}
+.goal_img_wrapper img{
+    object-fit: cover;
+}
+.goal_img_wrapper{
+    max-width: 800px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 1rem;
+}
+.goal_img1{
+    grid-row: 1/3;
+}
+@media only screen and (min-width:760px){
+    .goal_info{
+        text-align: center;
+    }
+    .goal_img_wrapper{
+        gap: 2rem;
+    }
+    .goal_text{
+        margin: 0 auto;
+    }
+    .goal_title{
+        font-size: 3.6rem;
+    }
+}
